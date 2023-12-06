@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Shop</title>
+	<title>Flat Fabrics Shop</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/waverley_images/logo_downsize-removebg-preview.png">
@@ -33,7 +33,13 @@
 
 </head>
 <body>
+	<div>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <a href="https://api.whatsapp.com/send?phone=263772405146&text=Hi!%20I%20would%20like%20to%20know%20more%20about%20your%20blankets%20and%20fabric%20sales.%20" class="float" target="_blank">
+		<i class="fa fa-whatsapp my-float"></i>
+		</a>
 	
+	</div>
 	<!--PreLoader-->
     <div class="loader">
         <div class="loader-inner">
@@ -59,14 +65,11 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
-									</ul>
+								<li ><a href="index_2.html">Home</a>
+									
 								</li>
 								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
+								<!--<li><a href="#">Pages</a>
 									<ul class="sub-menu">
 										<li><a href="404.html">404 page</a></li>
 										<li><a href="about.html">About</a></li>
@@ -76,21 +79,22 @@
 										<li><a href="news.html">News</a></li>
 										<li><a href="shop.html">Shop</a></li>
 									</ul>
-								</li>
+								</li>-->
 								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
+									
 								</li>
 								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
+								<li><a href="shop.html">Bedding</a>
+									<!--<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
+										
+									</ul>-->
+								</li>
+								<li class="current-list-item"><a href="flat-fabrics-shop.html">Flat Fabrics</a>
+									<!--<ul class="sub-menu">
+										<li><a href="shop.html">Shop</a></li>
+										
+									</ul>-->
 								</li>
 								<li>
 									<div class="header-icons">
@@ -119,15 +123,21 @@
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
 							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
-							<button type="submit">Search <i class="fas fa-search"></i></button>
+							<input type="text" id="searchInput" placeholder="Keywords">
+							<button onclick="search()">Search <i class="fas fa-search"></i></button>
+							<div id="searchResult">
+								<p id="resultMessage"></p>
+								<ul id="resultList"></ul>
+							</div>
+						
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end search arewa -->
+	<!-- end search area -->
+
 	
 	<!-- breadcrumb-section -->
 	<div class="breadcrumb-section breadcrumb-bg">
@@ -135,8 +145,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Warmth at a click away!</p>
-						<h1>Shop</h1>
+						<p>Find the perfect fabric!</p>
+						<h1>Flat Fabrics Shop</h1>
 					</div>
 				</div>
 			</div>
@@ -153,78 +163,184 @@
                     <div class="product-filters">
                         <ul>
                             <li class="active" data-filter="*">All</li>
-                            <li data-filter=".blankets">Blankets</li>
-                            <li data-filter=".comforters">Comforters</li>
-                            <li data-filter=".sheets">Sheets</li>
+                            <li data-filter=".tracksuiting">Tracksuiting</li>
+                            <li data-filter=".ticking">Ticking</li>
+                            <li data-filter=".ursula">Ursula</li>
+							<li data-filter=".fleece">Fleece</li>
+							<li data-filter=".workwear">Workwear</li>
+							<li data-filter=".mosquito-net">Mosquito Netting</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
 			<div class="row product-lists">
-				<div class="col-lg-4 col-md-6 text-center blankets">
+				<div class="col-lg-4 col-md-6 text-center mosquito-net">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img class="product-image-shop" src="assets/img/waverley_images/product_example-removebg-preview.png" alt=""></a>
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain green mosquito netting(2).png" alt=""></a>
 						</div>
-						<h3 class="product-name product-name-shop">Mafuta Blanket</h3>
+						<h3 class="product-name product-name-shop">Plain Green Mosquito Netting</h3>
 						<p class="product-price product-price-shop"> $85 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
 						<button type="submit" class="cart-btn btn btn-primary" data-id="1" data-name="Mafuta Blanket" data-price="85.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 text-center comforters">
+				<div class="col-lg-4 col-md-6 text-center mosquito-net">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img class="product-image-shop" src="assets/img/waverley_images/product_example-removebg-preview.png" alt=""></a>
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain mosquito netting (2)2).png" alt=""></a>
 						</div>
-						<h3 class="product-name product-name-shop">Debbie Comforter</h3>
+						<h3 class="product-name product-name-shop">Plain Mosquito Netting</h3>
 						<p class="product-price product-price-shop"> $70 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
 						<button type="submit" class="cart-btn btn btn-primary" data-id="2" data-name="Debbie Comforter" data-price="70.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 text-center sheets">
+				<div class="col-lg-4 col-md-6 text-center mosquito-net">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img class="product-image-shop" src="assets/img/waverley_images/product_example-removebg-preview.png" alt=""></a>
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain mosquito netting (3)2).png" alt=""></a>
 						</div>
-						<h3 class="product-name product-name-shop">Double Sheet</h3>
+						<h3 class="product-name product-name-shop">Plain Mosquito Netting</h3>
 						<p class="product-price product-price-shop"> $35 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
 						<button type="submit" class="cart-btn btn btn-primary" data-id="3" data-name="Double Sheets" data-price="35.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 text-center comforters">
+				<div class="col-lg-4 col-md-6 text-center mosquito-net">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img class="product-image-shop" src="assets/img/waverley_images/product_example-removebg-preview.png" alt=""></a>
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain mosquito netting(1)2).png" alt=""></a>
 						</div>
-						<h3 class="product-name product-name-shop">Plain Comforter</h3>
+						<h3 class="product-name product-name-shop">Plain Mosquito Netting</h3>
 						<p class="product-price product-price-shop"> $50 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
 						<button type="submit" class="cart-btn btn btn-primary" data-id="4" data-name="Plain Comforter" data-price="50.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 text-center sheets">
+				<div class="col-lg-4 col-md-6 text-center fleece">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img class="product-image-shop" src="assets/img/waverley_images/product_example-removebg-preview.png" alt=""></a>
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain polar fleece (2)2).png" alt=""></a>
 						</div>
-						<h3 class="product-name product-name-shop">Single Sheet</h3>
+						<h3 class="product-name product-name-shop">Plain Polar Fleece</h3>
 						<p class="product-price product-price-shop"> $45 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
 						<button type="submit" class="cart-btn btn btn-primary" data-id="5" data-name="Debbie Comforter" data-price="70.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 text-center blankets">
+				<div class="col-lg-4 col-md-6 text-center fleece">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img class="product-image-shop" src="assets/img/waverley_images/product_example-removebg-preview.png" alt=""></a>
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain polar fleece (3)2).png" alt=""></a>
 						</div>
-						<h3 class="product-name product-name-shop">Plain Blanket</h3>
+						<h3 class="product-name product-name-shop">Plain Polar Fleece</h3>
 						<p class="product-price product-price-shop"> $80 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
 						<button type="submit" class="cart-btn btn btn-primary" data-id="6" data-name="Plain Blanket" data-price="45.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center fleece">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain polar fleece(1)2).png" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Plain Polar Fleece</h3>
+						<p class="product-price product-price-shop"> $85 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="1" data-name="Mafuta Blanket" data-price="85.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ursula">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain ursula (2)2).png" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Plain Ursula</h3>
+						<p class="product-price product-price-shop"> $70 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="2" data-name="Debbie Comforter" data-price="70.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ursula">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain ursula(1)2).png" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Plain Ursula</h3>
+						<p class="product-price product-price-shop"> $35 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="3" data-name="Double Sheets" data-price="35.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div><div class="col-lg-4 col-md-6 text-center workwear">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/plain work wear(2).png" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Plain Work Wear</h3>
+						<p class="product-price product-price-shop"> $85 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="1" data-name="Mafuta Blanket" data-price="85.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ticking">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/ptd ticking(2).png" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Ticking</h3>
+						<p class="product-price product-price-shop"> $70 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="2" data-name="Debbie Comforter" data-price="70.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ursula">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/red orchid ursula (2)2).png" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Red Orchid Ursula</h3>
+						<p class="product-price product-price-shop"> $35 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="3" data-name="Double Sheets" data-price="35.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div><div class="col-lg-4 col-md-6 text-center ursula">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/red orchid ursula(1)2).png" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Red Orchid Ursula</h3>
+						<p class="product-price product-price-shop"> $85 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="1" data-name="Mafuta Blanket" data-price="85.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ticking">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/ticking.jpg" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Ticking</h3>
+						<p class="product-price product-price-shop"> $70 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="2" data-name="Debbie Comforter" data-price="70.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center tracksuiting">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img class="product-image-shop" src="assets/img/flat-fabrics-resized-images/tracksuiting(2).png" alt=""></a>
+						</div>
+						<h3 class="product-name product-name-shop">Tracksuiting</h3>
+						<p class="product-price product-price-shop"> $35 </p>
+						<p class="product-price-zwl product-price-shop-zwl"> ZWL$85 </p>
+						<button type="submit" class="cart-btn btn btn-primary" data-id="3" data-name="Double Sheets" data-price="35.00" data-image="assets/img/waverley_images/product_example-removebg-preview.png"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
+			<!--<div class="row">
 				<div class="col-lg-12 text-center">
 					<div class="pagination-wrap">
 						<ul>
@@ -236,7 +352,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 	<!-- end products -->
@@ -311,7 +427,7 @@
 	<!-- end cart -->
 
 	<!-- logo carousel -->
-	<div class="logo-carousel-section">
+	<!--<div class="logo-carousel-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -335,107 +451,111 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- end logo carousel -->
 
-	<!-- footer -->
-	<div class="footer-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box about-widget">
-						<h2 class="widget-title">About us</h2>
-						<p>Waverley Blankets is a proud Zimbabwean company that is committed to providing its customers with the highest quality blankets. The company's blankets are a testament to the skill and craftsmanship of Zimbabwean workers, and they are a source of warmth and comfort for millions of people around the world.</p>
+		<!-- footer -->
+		<div class="footer-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-box about-widget">
+							<h2 class="widget-title">About us</h2>
+							<p>Waverley Blankets is a proud Zimbabwean company that is committed to providing its customers with the highest quality blankets. The company's blankets are a testament to the skill and craftsmanship of Zimbabwean workers, and they are a source of warmth and comfort for millions of people around the world.</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box get-in-touch">
-						<h2 class="widget-title">Get in Touch</h2>
-						<ul>
-							<li>122 Cnr Kelvin Rd South & Boshoff Drive⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
-							<li>Graniteside</li>
-							<li>Harare</li>
-							<li>info@waverleyblankets.com</li>
-							<li>L/ Line: 0242-775901/37/38⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
-							<li>Mobile:0772 405 146 / 0772 144 244/5⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
-							<li>Whatsapp: 0772 405 146⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
-						</ul>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-box get-in-touch">
+							<h2 class="widget-title">Get in Touch</h2>
+							<ul>
+								<li>122 Cnr Kelvin Rd South & Boshoff Drive⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
+								<li>Graniteside</li>
+								<li>Harare</li>
+								<li>info@waverleyblankets.com</li>
+								<li>L/ Line: 0242-775901/37/38⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
+								<li>Mobile:0772 405 146 / 0772 144 244/5⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
+								<li>Whatsapp: 0772 405 146⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box pages">
-						<h2 class="widget-title">Pages</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-box pages">
+							<h2 class="widget-title">Pages</h2>
+							<ul>
+								<li><a href="index_2.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="news.html">News</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="shop.html">Bedding Shop</a></li>
+								<li><a href="flat-fabrics-shop.html">Flat Fabric Shop</a></li>
+								<li><a href="cart.html">Shopping Cart</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box subscribe">
-						<h2 class="widget-title">Subscribe</h2>
-						<p>Subscribe to our mailing list to get the latest updates.</p>
-						<form action="index.html">
-							<input type="email" placeholder="Email">
-							<button type="submit"><i class="fas fa-paper-plane"></i></button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end footer -->
-	
-	<!-- copyright -->
-	<div class="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2023 - <a href="https://waverleyblankets.com/">Waverley Blankets</a>,  All Rights Reserved.<br>
-						Disigned and Created By - <a href="http://dotnotationstudios.com/">.notation{Studios}</a>
-					</p>
-				</div>
-				<div class="col-lg-6 text-right col-md-12">
-					<div class="social-icons">
-						<ul>
-							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-						</ul>
+					<div class="col-lg-3 col-md-6">
+						<div id="form_status"></div>
+						<div class="footer-box subscribe">
+							<h2 class="widget-title">Subscribe</h2>
+							<p>Subscribe to our mailing list to get the latest updates.</p>
+							<form type="POST" id="subscribe-form" onSubmit="return valid_datas( this );">
+								<input type="email" placeholder="Email" name="email" id="email">
+								<button type="submit" value="Submit"><i class="fas fa-paper-plane"></i></button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- end copyright -->
+		<!-- end footer -->
+		
+		<!-- copyright -->
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<p>Copyrights &copy; 2023 - <a href="https://waverleyblankets.com/">Waverley Blankets</a>,  All Rights Reserved.<br>
+							Disigned and Created By - <a href="http://dotnotationstudios.com/">.notation{Studios}</a>
+						</p>
+					</div>
+					<div class="col-lg-6 text-right col-md-12">
+						<div class="social-icons">
+							<ul>
+								<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end copyright -->
+		
+		<!-- jquery -->
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+		<!-- bootstrap -->
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<!-- count down -->
+		<script src="assets/js/jquery.countdown.js"></script>
+		<!-- isotope -->
+		<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+		<!-- waypoints -->
+		<script src="assets/js/waypoints.js"></script>
+		<!-- owl carousel -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- magnific popup -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<!-- mean menu -->
+		<script src="assets/js/jquery.meanmenu.min.js"></script>
+		<!-- sticker js -->
+		<script src="assets/js/sticker.js"></script>
+		<!-- cart js -->
+		<script src="/cart.js" async></script>
+		<!-- main js -->
+		<script src="assets/js/main.js"></script>
+		<script src="./search.js"></script>
 	
-	<!-- jquery -->
-	<script src="assets/js/jquery-1.11.3.min.js"></script>
-	<!-- bootstrap -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- count down -->
-	<script src="assets/js/jquery.countdown.js"></script>
-	<!-- isotope -->
-	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
-	<!-- waypoints -->
-	<script src="assets/js/waypoints.js"></script>
-	<!-- owl carousel -->
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<!-- magnific popup -->
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<!-- mean menu -->
-	<script src="assets/js/jquery.meanmenu.min.js"></script>
-	<!-- sticker js -->
-	<script src="assets/js/sticker.js"></script>
-	<!-- cart js -->
-	<script src="/cart.js" async></script>
-	<!-- main js -->
-	<script src="assets/js/main.js"></script>
-
 </body>
 </html>
