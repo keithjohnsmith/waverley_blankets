@@ -33,7 +33,13 @@
 
 </head>
 <body>
+	<div>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <a href="https://api.whatsapp.com/send?phone=263772405146&text=Hi!%20I%20would%20like%20to%20know%20more%20about%20your%20blankets%20and%20fabric%20sales.%20" class="float" target="_blank">
+		<i class="fa fa-whatsapp my-float"></i>
+		</a>
 	
+	</div>
 	<!--PreLoader-->
     <div class="loader">
         <div class="loader-inner">
@@ -59,14 +65,11 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
-									</ul>
+								<li ><a href="index_2.html">Home</a>
+									
 								</li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
+								<li class="current-list-item"><a href="about.html">About</a></li>
+								<!--<li><a href="#">Pages</a>
 									<ul class="sub-menu">
 										<li><a href="404.html">404 page</a></li>
 										<li><a href="about.html">About</a></li>
@@ -76,21 +79,22 @@
 										<li><a href="news.html">News</a></li>
 										<li><a href="shop.html">Shop</a></li>
 									</ul>
-								</li>
+								</li>-->
 								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
+									
 								</li>
 								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
+								<li><a href="shop.html">Bedding</a>
+									<!--<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
+										
+									</ul>-->
+								</li>
+								<li ><a href="flat-fabrics-shop.html">Flat Fabrics</a>
+									<!--<ul class="sub-menu">
+										<li><a href="shop.html">Shop</a></li>
+										
+									</ul>-->
 								</li>
 								<li>
 									<div class="header-icons">
@@ -119,15 +123,21 @@
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
 							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
-							<button type="submit">Search <i class="fas fa-search"></i></button>
+							<input type="text" id="searchInput" placeholder="Keywords">
+							<button onclick="search()">Search <i class="fas fa-search"></i></button>
+							<div id="searchResult">
+								<p id="resultMessage"></p>
+								<ul id="resultList"></ul>
+							</div>
+						
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end search arewa -->
+	<!-- end search area -->
+	
 	
 	<!-- breadcrumb-section -->
 	<div class="breadcrumb-section breadcrumb-bg">
@@ -159,7 +169,7 @@
 									</div>
 									<div class="content">
 										<h3>Home Delivery</h3>
-										<p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+										<p>Enjoy the luxury of complimentary shipping on orders meeting a specified minimum spend, adding an extra touch of convenience and value to your shopping experience.</p>
 									</div>
 								</div>
 							</div>
@@ -170,7 +180,7 @@
 									</div>
 									<div class="content">
 										<h3>Best Price</h3>
-										<p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+										<p>Waverley Blankets stands out in Harare for offering the most competitive prices due to their commitment to you as our customers.</p>
 									</div>
 								</div>
 							</div>
@@ -181,7 +191,7 @@
 									</div>
 									<div class="content">
 										<h3>Custom Orders</h3>
-										<p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+										<p>Experience personalized perfection with bespoke orders tailored to your unique preferences.</p>
 									</div>
 								</div>
 							</div>
@@ -191,8 +201,8 @@
 										<i class="fas fa-sync-alt"></i>
 									</div>
 									<div class="content">
-										<h3>Quick Refund</h3>
-										<p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+										<h3>Quality Assurance</h3>
+										<p>Exemplifying our unwavering commitment to excellence – our Quality Assurance ensures every product meets the highest standards of craftsmanship and satisfaction.</p>
 									</div>
 								</div>
 							</div>
@@ -215,7 +225,7 @@
 	<!-- end shop banner -->
 
 	<!-- team section -->
-	<div class="mt-150">
+	<!--<div class="mt-150">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
@@ -261,7 +271,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- end team section -->
 
 	<!-- testimonail-section -->
@@ -272,12 +282,12 @@
 					<div class="testimonial-sliders">
 						<div class="single-testimonial-slider">
 							<div class="client-avater">
-								<img src="assets/img/avaters/avatar1.png" alt="">
+								<img src="assets/img/avaters/Asset-1-512-phlke61w7i5n36pbu5smy7kp3vs9tvm9e643iabeik.png" alt="">
 							</div>
 							<div class="client-meta">
-								<h3>Saira Hakim <span>Local shop owner</span></h3>
+								<h3>N. Richards Group <span>Local Company</span></h3>
 								<p class="testimonial-body">
-									"The blanket is the best I have ever owned. It is warm and cozy without being too heavy. I highly recommend it to anyone looking for a high-quality blanket that will last for years to come. "
+									"Waverley Blankets has proven to be an invaluable partner for N. Richards. The superior quality of their blankets, combined with impeccable service, has exceeded our expectations and delighted our customers, making them our go-to supplier for premium bedding."
 								</p>
 								<div class="last-icon">
 									<i class="fas fa-quote-right"></i>
@@ -286,12 +296,12 @@
 						</div>
 						<div class="single-testimonial-slider">
 							<div class="client-avater">
-								<img src="assets/img/avaters/avatar2.png" alt="">
+								<img src="assets/img/avaters/riosetgzu-1.jpg" alt="">
 							</div>
 							<div class="client-meta">
-								<h3>David Niph <span>Local shop owner</span></h3>
+								<h3>Great Zimbabwe University <span>Local University</span></h3>
 								<p class="testimonial-body">
-									"I love my new blanket! It is so soft and comfortable. I can't wait to use it all winter long."
+									"Great Zimbabwe University is pleased to share our positive experience with Waverley Blankets, our chosen supplier for student resident blankets. The superior craftsmanship and durability of the blankets have significantly contributed to the comfort and well-being of our students. Waverley Blankets' dedication to providing top-notch products aligns seamlessly with our commitment to excellence in student accommodations."
 								</p>
 								<div class="last-icon">
 									<i class="fas fa-quote-right"></i>
@@ -300,12 +310,12 @@
 						</div>
 						<div class="single-testimonial-slider">
 							<div class="client-avater">
-								<img src="assets/img/avaters/avatar3.png" alt="">
+								<img src="assets/img/avaters/uz-logo-1131.jpg" alt="">
 							</div>
 							<div class="client-meta">
-								<h3>Jacob Sikim <span>Local shop owner</span></h3>
+								<h3>University of Zimbabwe <span>Local University</span></h3>
 								<p class="testimonial-body">
-									"I bought this blanket for my wife for her birthday and she loves it! It is so soft and warm. She says it is the best blanket she has ever owned."
+									"The University of Zimbabwe is delighted to express our satisfaction with the recent procurement of blankets from Waverley Blankets for our student residents. The unparalleled quality and comfort of the blankets have undoubtedly elevated the living experience on our campus. Waverley Blankets' commitment to excellence in both product and service has made them a trusted partner for our institution."
 								</p>
 								<div class="last-icon">
 									<i class="fas fa-quote-right"></i>
@@ -320,7 +330,7 @@
 	<!-- end testimonail-section -->
 
 	<!-- logo carousel -->
-	<div class="logo-carousel-section">
+	<!--<div class="logo-carousel-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -348,7 +358,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- end logo carousel -->
 
 	<!-- cart -->
@@ -448,21 +458,24 @@
 					<div class="footer-box pages">
 						<h2 class="widget-title">Pages</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index_2.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
 							<li><a href="news.html">News</a></li>
 							<li><a href="contact.html">Contact</a></li>
+							<li><a href="shop.html">Bedding Shop</a></li>
+							<li><a href="flat-fabrics-shop.html">Flat Fabric Shop</a></li>
+							<li><a href="cart.html">Shopping Cart</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
+					<div id="form_status"></div>
 					<div class="footer-box subscribe">
 						<h2 class="widget-title">Subscribe</h2>
 						<p>Subscribe to our mailing list to get the latest updates.</p>
-						<form action="index.html">
-							<input type="email" placeholder="Email">
-							<button type="submit"><i class="fas fa-paper-plane"></i></button>
+						<form type="POST" id="subscribe-form" onSubmit="return valid_datas( this );">
+							<input type="email" placeholder="Email" name="email" id="email">
+							<button type="submit" value="Submit"><i class="fas fa-paper-plane"></i></button>
 						</form>
 					</div>
 				</div>
@@ -518,6 +531,7 @@
 	<script src="/cart.js" async></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<script src="./search.js"></script>
 
 </body>
 </html>

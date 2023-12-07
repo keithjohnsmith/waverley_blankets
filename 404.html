@@ -33,7 +33,13 @@
 
 </head>
 <body>
+	<div>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <a href="https://api.whatsapp.com/send?phone=263772405146&text=Hi!%20I%20would%20like%20to%20know%20more%20about%20your%20blankets%20and%20fabric%20sales.%20" class="float" target="_blank">
+		<i class="fa fa-whatsapp my-float"></i>
+		</a>
 	
+	</div>
 	<!--PreLoader-->
     <div class="loader">
         <div class="loader-inner">
@@ -59,14 +65,11 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
-									</ul>
+								<li ><a href="index_2.html">Home</a>
+									
 								</li>
 								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
+								<!--<li><a href="#">Pages</a>
 									<ul class="sub-menu">
 										<li><a href="404.html">404 page</a></li>
 										<li><a href="about.html">About</a></li>
@@ -76,21 +79,22 @@
 										<li><a href="news.html">News</a></li>
 										<li><a href="shop.html">Shop</a></li>
 									</ul>
-								</li>
+								</li>-->
 								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
+									
 								</li>
 								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
+								<li><a href="shop.html">Bedding</a>
+									<!--<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
+										
+									</ul>-->
+								</li>
+								<li ><a href="flat-fabrics-shop.html">Flat Fabrics</a>
+									<!--<ul class="sub-menu">
+										<li><a href="shop.html">Shop</a></li>
+										
+									</ul>-->
 								</li>
 								<li>
 									<div class="header-icons">
@@ -110,23 +114,29 @@
 	</div>
 	<!-- end header -->
 
-		<!-- search area -->
-		<div class="search-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<span class="close-btn"><i class="fas fa-window-close"></i></span>
-						<div class="search-bar">
-							<div class="search-bar-tablecell">
-								<h3>Search For:</h3>
-								<input type="text" placeholder="Keywords">
-								<button type="submit">Search <i class="fas fa-search"></i></button>
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" id="searchInput" placeholder="Keywords">
+							<button onclick="search()">Search <i class="fas fa-search"></i></button>
+							<div id="searchResult">
+								<p id="resultMessage"></p>
+								<ul id="resultList"></ul>
 							</div>
+						
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<!-- end search area -->
 		<!-- end search arewa -->
 		<!-- breadcrumb-section -->
 		<div class="breadcrumb-section breadcrumb-bg">
@@ -152,7 +162,7 @@
 								<i class="far fa-sad-cry"></i>
 								<h1>Oops! Not Found.</h1>
 								<p>The page you requested for is not found.</p>
-								<a href="index.html" class="boxed-btn">Back to Home</a>
+								<a href="index_2.html" class="boxed-btn">Back to Home</a>
 							</div>
 						</div>
 					</div>
@@ -161,7 +171,7 @@
 		</div>
 		<!-- end error section -->
 		<!-- logo carousel -->
-		<div class="logo-carousel-section">
+		<!--<div class="logo-carousel-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -185,7 +195,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<!-- end logo carousel -->
 
 		<!-- cart -->
@@ -257,80 +267,83 @@
 	</div>
 	<!-- end cart -->
 		
-		<!-- footer -->
-		<div class="footer-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<div class="footer-box about-widget">
-							<h2 class="widget-title">About us</h2>
-							<p>Waverley Blankets is a proud Zimbabwean company that is committed to providing its customers with the highest quality blankets. The company's blankets are a testament to the skill and craftsmanship of Zimbabwean workers, and they are a source of warmth and comfort for millions of people around the world.</p>
-						</div>
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">About us</h2>
+						<p>Waverley Blankets is a proud Zimbabwean company that is committed to providing its customers with the highest quality blankets. The company's blankets are a testament to the skill and craftsmanship of Zimbabwean workers, and they are a source of warmth and comfort for millions of people around the world.</p>
 					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="footer-box get-in-touch">
-							<h2 class="widget-title">Get in Touch</h2>
-							<ul>
-								<li>122 Cnr Kelvin Rd South & Boshoff Drive⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
-								<li>Graniteside</li>
-								<li>Harare</li>
-								<li>info@waverleyblankets.com</li>
-								<li>L/ Line: 0242-775901/37/38⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
-								<li>Mobile:0772 405 146 / 0772 144 244/5⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
-								<li>Whatsapp: 0772 405 146⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
-							</ul>
-						</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Get in Touch</h2>
+						<ul>
+							<li>122 Cnr Kelvin Rd South & Boshoff Drive⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
+							<li>Graniteside</li>
+							<li>Harare</li>
+							<li>info@waverleyblankets.com</li>
+							<li>L/ Line: 0242-775901/37/38⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
+							<li>Mobile:0772 405 146 / 0772 144 244/5⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
+							<li>Whatsapp: 0772 405 146⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣</li>
+						</ul>
 					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="footer-box pages">
-							<h2 class="widget-title">Pages</h2>
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="services.html">Shop</a></li>
-								<li><a href="news.html">News</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="index_2.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="shop.html">Bedding Shop</a></li>
+							<li><a href="flat-fabrics-shop.html">Flat Fabric Shop</a></li>
+							<li><a href="cart.html">Shopping Cart</a></li>
+						</ul>
 					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="footer-box subscribe">
-							<h2 class="widget-title">Subscribe</h2>
-							<p>Subscribe to our mailing list to get the latest updates.</p>
-							<form action="index.html">
-								<input type="email" placeholder="Email">
-								<button type="submit"><i class="fas fa-paper-plane"></i></button>
-							</form>
-						</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div id="form_status"></div>
+					<div class="footer-box subscribe">
+						<h2 class="widget-title">Subscribe</h2>
+						<p>Subscribe to our mailing list to get the latest updates.</p>
+						<form type="POST" id="subscribe-form" onSubmit="return valid_datas( this );">
+							<input type="email" placeholder="Email" name="email" id="email">
+							<button type="submit" value="Submit"><i class="fas fa-paper-plane"></i></button>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- end footer -->
-		
-		<!-- copyright -->
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-12">
-						<p>Copyrights &copy; 2023 - <a href="https://waverleyblankets.com/">Waverley Blankets</a>,  All Rights Reserved.<br>
-							Disigned and Created By - <a href="http://dotnotationstudios.com/">.notation{Studios}</a>
-						</p>
-					</div>
-					<div class="col-lg-6 text-right col-md-12">
-						<div class="social-icons">
-							<ul>
-								<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-							</ul>
-						</div>
+	</div>
+	<!-- end footer -->
+	
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2023 - <a href="https://waverleyblankets.com/">Waverley Blankets</a>,  All Rights Reserved.<br>
+						Disigned and Created By - <a href="http://dotnotationstudios.com/">.notation{Studios}</a>
+					</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	<!-- end copyright -->
 	
 	<!-- jquery -->
@@ -355,6 +368,7 @@
 	<script src="/cart.js" async></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
-	
+	<script src="./search.js"></script>
+
 	</body>
 </html>
