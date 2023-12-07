@@ -33,7 +33,13 @@
 
 </head>
 <body>
+	<div>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <a href="https://api.whatsapp.com/send?phone=263772405146&text=Hi!%20I%20would%20like%20to%20know%20more%20about%20your%20blankets%20and%20fabric%20sales.%20" class="float" target="_blank">
+		<i class="fa fa-whatsapp my-float"></i>
+		</a>
 	
+	</div>
 	<!--PreLoader-->
     <div class="loader">
         <div class="loader-inner">
@@ -59,14 +65,11 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
-									</ul>
+								<li ><a href="index_2.html">Home</a>
+									
 								</li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
+								<li ><a href="about.html">About</a></li>
+								<!--<li><a href="#">Pages</a>
 									<ul class="sub-menu">
 										<li><a href="404.html">404 page</a></li>
 										<li><a href="about.html">About</a></li>
@@ -76,21 +79,22 @@
 										<li><a href="news.html">News</a></li>
 										<li><a href="shop.html">Shop</a></li>
 									</ul>
-								</li>
+								</li>-->
 								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
+									
 								</li>
 								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
+								<li class="current-list-item"><a href="shop.html">Bedding</a>
+									<!--<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
+										
+									</ul>-->
+								</li>
+								<li ><a href="flat-fabrics-shop.html">Flat Fabrics</a>
+									<!--<ul class="sub-menu">
+										<li><a href="shop.html">Shop</a></li>
+										
+									</ul>-->
 								</li>
 								<li>
 									<div class="header-icons">
@@ -119,15 +123,21 @@
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
 							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
-							<button type="submit">Search <i class="fas fa-search"></i></button>
+							<input type="text" id="searchInput" placeholder="Keywords">
+							<button onclick="search()">Search <i class="fas fa-search"></i></button>
+							<div id="searchResult">
+								<p id="resultMessage"></p>
+								<ul id="resultList"></ul>
+							</div>
+						
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end search arewa -->
+	<!-- end search area -->
+	
 	
 	<!-- breadcrumb-section -->
 	<div class="breadcrumb-section breadcrumb-bg">
@@ -228,7 +238,7 @@
 	<!-- end more products -->
 
 	<!-- logo carousel -->
-	<div class="logo-carousel-section">
+	<!--<div class="logo-carousel-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -252,7 +262,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- end logo carousel -->
 
 	<!-- cart -->
@@ -352,21 +362,24 @@
 					<div class="footer-box pages">
 						<h2 class="widget-title">Pages</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index_2.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
 							<li><a href="news.html">News</a></li>
 							<li><a href="contact.html">Contact</a></li>
+							<li><a href="shop.html">Bedding Shop</a></li>
+							<li><a href="flat-fabrics-shop.html">Flat Fabric Shop</a></li>
+							<li><a href="cart.html">Shopping Cart</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
+					<div id="form_status"></div>
 					<div class="footer-box subscribe">
 						<h2 class="widget-title">Subscribe</h2>
 						<p>Subscribe to our mailing list to get the latest updates.</p>
-						<form action="index.html">
-							<input type="email" placeholder="Email">
-							<button type="submit"><i class="fas fa-paper-plane"></i></button>
+						<form type="POST" id="subscribe-form" onSubmit="return valid_datas( this );">
+							<input type="email" placeholder="Email" name="email" id="email">
+							<button type="submit" value="Submit"><i class="fas fa-paper-plane"></i></button>
 						</form>
 					</div>
 				</div>
@@ -422,6 +435,7 @@
 	<script src="/cart.js" async></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<script src="./search.js"></script>
 
 </body>
 </html>
