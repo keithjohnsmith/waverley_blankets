@@ -154,39 +154,79 @@
 	</div>
 	<!-- end breadcrumb section -->
 
-	<div id="product-details" class="single-product mt-150 mb-150">
-		<div class="col-md-5">
-	<div class="container">
-		<div class="row">
-			<div class="single-product-img">
-				<img id="product-image" src=""  alt="">
-			</div>
-		</div>
-		<div class="col-md-7">
-			<div class="single-product-content">
-				<h3 id="product-name"></h3>
-				<p id="product-price" class="single-product-pricing"></p>
-				<p id="product-description"></p>
-				<div class="single-product-form">
-					<form action="index.html">
-						<input type="number" placeholder="0">
-					</form>
-					<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-					<p><strong>Categories: </strong>Blankets, Comforters</p>
+	<!-- single product -->
+	<div class="single-product mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="single-product-img">
+						<div class="slider-container">
+							<div class="slider">
+							  <div class="slide"><img src="assets/img/bedding-product-images/baby-blanket.png" alt="Image 1"></div>
+							  <div class="slide"><img src="assets/img/bedding-product-images/baby-blanket2.png" alt="Image 2"></div>
+							  <div class="slide"><img src="assets/img/bedding-product-images/baby-carrier.png" alt="Image 3"></div>
+							  <!-- Add more slides as needed -->
+							</div>
+							
+							<!-- Optional: Add navigation buttons -->
+							<div class="prev" onclick="prevSlide()">&#10094;</div>
+							<div class="next" onclick="nextSlide()">&#10095;</div>
+						</div>
+						<script>
+							let currentSlide = 0;
+						  
+							function showSlide(index) {
+							  const slider = document.querySelector('.slider');
+							  const slides = document.querySelectorAll('.slide');
+						  
+							  if (index >= slides.length) {
+								currentSlide = 0;
+							  } else if (index < 0) {
+								currentSlide = slides.length - 1;
+							  } else {
+								currentSlide = index;
+							  }
+						  
+							  const translateValue = -currentSlide * 100 + '%';
+							  slider.style.transform = 'translateX(' + translateValue + ')';
+							}
+						  
+							function prevSlide() {
+							  showSlide(currentSlide - 1);
+							}
+						  
+							function nextSlide() {
+							  showSlide(currentSlide + 1);
+							}
+						  </script>
+						
+					</div>
 				</div>
-				<h4>Share:</h4>
-				<ul class="product-share">
-					<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href=""><i class="fab fa-twitter"></i></a></li>
-					<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-					<li><a href=""><i class="fab fa-linkedin"></i></a></li>
-				</ul>
+				<div class="col-md-7">
+					<div class="single-product-content">
+						<h3>Mafuta Blanket</h3>
+						<p class="single-product-pricing"> $50</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.</p>
+						<div class="single-product-form">
+							<form action="index.html">
+								<input type="number" placeholder="0">
+							</form>
+							<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+							<p><strong>Categories: </strong>Blankets, Comforters</p>
+						</div>
+						<h4>Share:</h4>
+						<ul class="product-share">
+							<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
-<!-- end single product -->
+	<!-- end single product -->
 
 	<!-- more products -->
 	<div class="product-section mt-150 mb-150">

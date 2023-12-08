@@ -160,7 +160,45 @@
 			<div class="row">
 				<div class="col-md-5">
 					<div class="single-product-img">
-						<img src="assets/img/waverley_images/product_example-removebg-preview.png" alt="">
+						<div class="slider-container">
+							<div class="slider">
+							  <div class="slide"><img src="assets/img/bedding-product-images/baby-blanket.png" alt="Image 1"></div>
+							  <div class="slide"><img src="assets/img/bedding-product-images/baby-blanket2.png" alt="Image 2"></div>
+							  <div class="slide"><img src="assets/img/bedding-product-images/baby-carrier.png" alt="Image 3"></div>
+							  <!-- Add more slides as needed -->
+							</div>
+							
+							<!-- Optional: Add navigation buttons -->
+							<div class="prev" onclick="prevSlide()">&#10094;</div>
+							<div class="next" onclick="nextSlide()">&#10095;</div>
+						</div>
+						<script>
+							let currentSlide = 0;
+						  
+							function showSlide(index) {
+							  const slider = document.querySelector('.slider');
+							  const slides = document.querySelectorAll('.slide');
+						  
+							  if (index >= slides.length) {
+								currentSlide = 0;
+							  } else if (index < 0) {
+								currentSlide = slides.length - 1;
+							  } else {
+								currentSlide = index;
+							  }
+						  
+							  const translateValue = -currentSlide * 100 + '%';
+							  slider.style.transform = 'translateX(' + translateValue + ')';
+							}
+						  
+							function prevSlide() {
+							  showSlide(currentSlide - 1);
+							}
+						  
+							function nextSlide() {
+							  showSlide(currentSlide + 1);
+							}
+						  </script>
 					</div>
 				</div>
 				<div class="col-md-7">
